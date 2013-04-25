@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=utf-8"/>
+	<title>Chris Walker</title>
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen" charset="utf-8"/>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+	
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script type="text/javascript" src="jquery.js"></script> 
+</head>
+<body>
+
+	<div id="container">
+		<img id="pic" src="images/pic.png" />
+		<h1 id="pic-h1">Chris Walker</br><span class="h1-title">Web &amp; Graphic Designer from Memphis, TN</span></h1>
+
+	<dl class="accordion">
+		<dt class="tab"><a href="">Work &rsaquo;</a></dt>
+			<dd style="background:#f5f5f5;">
+				<img src="images/paay.png" class="thumb"/><br/>
+				<a href="http://www.paay.co"><span class="button">Visit PAAY.co</span></a><br/><br/>
+				<img src="images/trainingeveryday.png" class="thumb"/><br/><br/>
+				<a href="http://www.trainingeveryday.com" style="cursor:default; padding:0px;"><span class="button" style="cursor:pointer;">Visit TrainingEveryday.com</span></a><br/><br/>
+				<img src="images/songspace.png" class="thumb"/><br/><br/>
+				<a href="http://www.behance.net/cawalker" style="cursor:default; padding:0px;"><span class="button-blue" style="cursor:pointer;">See Full Portfolio</span></a>
+				<br/>
+			</dd>
+
+		<dt class="tab"><a href="">Education &rsaquo;</a></dt>
+			<dd>
+				<strong>The University of Memphis<br/>
+				BFA, Graphic Design</strong><br/>
+				<em>(2004 – 2009)</em><br/><br/>
+
+				<strong>Collierville High School</strong><br/>
+				<em>(2001 – 2003)</em>				
+			</dd>
+
+		<dt class="tab"><a href="">Experience &rsaquo;</a></dt>
+			<dd><strong class="blue">Graphic / Web Designer<br/>
+			Freelance</strong><br/><br/>
+			<strong>August 2010 – Present <em>(2 years 9 months)</em></strong><br/>
+			<ul>
+			<li>Developed graphics for presentations, marketing materials, and websites for various clients.</li>
+			<li>Wrote mobile and responsive websites using HTML, JavaScript, CSS, and PHP.</li>
+			<li>Designed mobile user interfaces and optimized icons, backgrounds, buttons, and other graphical assets for iOS and Android applications.</li>
+			<li>Worked collaboratively with several startup companies to develop branding, marketing materials, product designs, and websites.</li></ul>
+			<br/><br/>
+
+			<strong class="blue">UI/UX Developer &amp; Graphic Designer<br/>
+			ePaymentAmerica</strong><br/><br/>
+			<strong>September 2011 – January 2013 <em>(1 year 5 months)</em></strong><br/>
+			<ul>
+			<li>Worked as sole graphic designer at the company for the IT and marketing departments.</li>
+			<li>Produced wireframes, Photoshop mock ups, and graphical assets, for company’s various websites.</li>
+			<li>Wrote HTML files based on Photoshop mock ups.</li>
+			<li>Designed motion graphics video tutorials for the company’s website.</li>
+			<li>Edited styling, content, and graphics for company’s WordPress site.</li>
+			</ul>
+			<br/><br/>
+
+			<strong class="blue">Enterprise Learning &amp; Development Intern<br/>
+			ServiceMaster Corporate BSC</strong><br/><br/>
+			<strong>May 2011 – September 2011 <em>(5 months)</em></strong><br/><br/>
+			During my summer internship at ServiceMaster I worked on a variety projects ranging from logo design to internal newsletters. I also helped to reorganize and backup the department shared drive filing system.
+			<ul>
+			<li>Worked with Media Design Manager to develop graphics and animations for video presentations and training programs.</li>
+			<li>Worked with interns from other departments to research and present to Senior Vice President of Human Resources, ways to increase ServiceMaster’s brand awareness with local college students and recent graduates.</li>
+			<li>Gathered and designed graphical assets and data for presentations.</li>
+			<li>Ran sound board volume and microphones for presenters, trainers, and executives during training sessions.</li>
+			<li>Edited and designed final deliverables for internal newsletters and communications.</li>
+			</ul>
+			<br/><br/>
+
+			<strong class="blue">Production Designer<br/>
+			Cleo, Inc.</strong><br/><br/>
+			<strong>March 2007 – June 2011 (4 years 4 months)</strong><br/><br/>
+			My job was to create press ready files for our printing factory based in Memphis, TN and our vendors overseas. I am responsible for designing, editing, and filing production art and client projects. I also, develop mock-ups for our Product Sampling Department and our Memphis Show Rooms.
+			<ul>
+			<li>Worked with in house graphic designers and Packaging Art Manager to create, update, and backup production files.</li>
+			<li>Uploaded final deliverables to vendors overseas via FTP.</li>
+			<li>Archived digital artwork, and organized finished production art and mock up designs.</li>
+			<li>Tested printers for color matching mock ups to final production art.</li>
+			</ul>
+			<br/><br/>
+
+			<strong class="blue">Artist<br/>
+			Resolute Games</strong><br/><br/>
+			<strong>April 2009 – May 2010 (1 year 2 months)</strong><br/><br/>
+			I was one of the artists at Resolute Interactive, a start up company, based in Emerge Memphis. While at the company I worked on a variety of media including mobile software, video games, social networking, web, and print. 
+			<ul>
+			<li>Worked on a variety of client projects for mobile apps, games, web, and print.</li>
+			<li>Worked with iOS and Android developers to create and optimize UI assets, illustrations, and concept art for the use in games and apps.</li>
+			<li>Tested games and applications for bugs and reported results to the development teams.</li>
+			</ul>
+		</dd>
+	</dl>
+	</div><!--End container-->
+
+	<script>
+		(function($) {
+	    
+	  var allPanels = $('.accordion > dd').hide();
+	    
+	  $('.accordion > dt > a').click(function() {
+	      $this = $(this);
+	      $target = $this.parent().next();
+
+	      if(!$target.hasClass('active')){
+	         allPanels.removeClass('active').slideUp();
+	         $target.addClass('active').slideDown();
+	      }
+	      
+	    return false;
+	  });
+
+	})(jQuery);
+	</script>
+
+</body>
+</html>
+		
